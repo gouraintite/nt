@@ -3,6 +3,8 @@
 import Image from 'next/image'
 // import logo from '../../public/next.svg'
 import { useState } from 'react'
+import Link from 'next/link'
+
 export default function Home() {
 
   const [hide, setHide] = useState(true)
@@ -18,14 +20,14 @@ export default function Home() {
       <div class="m-auto space-y-8 md:w-8/12 lg:w-6/12 xl:w-6/12">
         <div class="rounded-3xl border border-dark/20 bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 backdrop-blur-2xl">
           <div class="p-2 py-2 sm:p-9">
-            <div class="flex items-center justify-center">
+            <Link href='/' class="flex items-center justify-center">
               <Image 
                 src='/nyanga.png' 
                 loading="lazy" 
                 width={90}
                 height={5}
                 class="mr-4 -mt-6" alt="tailus logo" />
-            </div>
+            </Link>
               <h2 class="mb-4 text-2xl font-bold text-gray-800 dark:text-white">Connectez-vous</h2>
             <form action="" class="space-y-8">
               <div class="space-y-2">
