@@ -22,8 +22,8 @@ const Home = () => {
                     </Link>
                     <p className="text-xl font-bold text-blue dark:text-gray-100">Nyanga <span className='text-primary'>Travel</span> </p>
                     <label for="hbr" className="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden">
-                        <div aria-hidden="true" className="m-auto h-0.5 w-5 rounded bg-gray-900 dark:bg-gray-300 transition duration-300"></div>
-                        <div aria-hidden="true" className="m-auto mt-2 h-0.5 w-5 rounded bg-gray-900 dark:bg-gray-300 transition duration-300"></div>
+                        <div aria-hidden="true" className="m-auto h-0.5 w-5 rounded bg-gray dark:bg-gray-300 transition duration-300"></div>
+                        <div aria-hidden="true" className="m-auto mt-2 h-0.5 w-5 rounded bg-gray dark:bg-gray-300 transition duration-300"></div>
                     </label>
                 </div>
                 <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white/20 dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
@@ -57,7 +57,7 @@ const Home = () => {
     </nav>
 </header>
 
-<div className="relative p-24 ">
+<div className="relative lg:pt-24 md:pt-24 pt-0">
     <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6 pt-24">
         <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-primary text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">Run successful remote and <br className="lg:block hidden" /> <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary dark:from-primaryLight dark:to-secondaryLight">Hybrid teams</span>.</h1>
         <div className="lg:flex">
