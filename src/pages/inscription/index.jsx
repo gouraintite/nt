@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
 
-    <div className="relative py-16 ring bg-primary/10 h-screen">
+    <div className="relative py-16 bg-primary/10 h-screen">
       <div className="container relative m-auto px-6 text-gray-500 md:px-12 xl:px-40">
         <div className="m-auto space-y-8 md:w-8/12 lg:w-6/12 xl:w-6/12">
           <div className="rounded-3xl border border-dark/20 bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 backdrop-blur-2xl">
