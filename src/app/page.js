@@ -2,10 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import next from '../../public/home.svg'
 import Link from 'next/link'
+import Head from 'next/head'
 const Home = () => {
   return (
     <>
-
+<Head>
+    <link rel="shortcut icon" href="../public/nyanga.png" />
+</Head>
 <header className='bg-primary'>
     <input type="checkbox" name="hbr" id="hbr" className="hbr peer" hidden aria-hidden="true" />
     <nav className="fixed z-20 w-full bg-white/10 dark:bg-gray-900/80 backdrop-blur-sm navbar shadow-2xl shadow-gray-600/5 border-b border-gray-100 dark:border-gray-800 peer-checked:navbar-active dark:shadow-none">

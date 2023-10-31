@@ -7,6 +7,12 @@
 
 *{
     font-family: 'Urbanist', sans-serif;
+    color: #0f0e0eae;
+}
+
+.goj{
+    color: #9d1818;
+
 }
 
 @layer components {
@@ -19,4 +25,9 @@
     .navbar-active div:first-child div:first-child div:last-child{
         @apply block lg:flex
     }
+
+    .input{
+        @apply focus:outline-none block w-full rounded-md border border-dark/40 dark:border-gray px-4 py-3 transition duration-300 focus-within:border-2 focus-within:duration-300 focus-within:ease-in focus-within:border-primary
+    }
 }
+
