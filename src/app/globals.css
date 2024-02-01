@@ -1,33 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: 'Urbanist', sans-serif;
-    color: #0f0e0eae;
+* {
+  font-family: 'Urbanist', sans-serif;
 }
 
-.goj{
-    color: #9d1818;
+.goj {
+  color: #9d1818;
+}
 
+.gradient{
+  background: linear-gradient(100deg, rgba(31, 31, 154, 0.793) 0%,rgba(11, 170, 11, 0.536) 100%);
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.20);
+  background-color: rgb(var(--accent));
+  transition: all 1s ease-in-out;
 }
 
 @layer components {
-    .navbar-active .hamburger div:first-child {
+  .navbar-active .hamburger div:first-child {
     @apply rotate-45 translate-y-1.5;
-    }
-    .navbar-active .hamburger div:last-child {
+  }
+  .navbar-active .hamburger div:last-child {
     @apply -rotate-45 -translate-y-1;
-    }
-    .navbar-active div:first-child div:first-child div:last-child{
-        @apply block lg:flex
-    }
+  }
+  .navbar-active div:first-child div:first-child div:last-child {
+    @apply block lg:flex;
+  }
 
-    .input{
-        @apply focus:outline-none block w-full rounded-md border border-dark/40 dark:border-gray px-4 py-3 transition duration-300 focus-within:border-2 focus-within:duration-300 focus-within:ease-in focus-within:border-primary
-    }
+  .input {
+    @apply focus:outline-none block w-full rounded-md border border-dark/40 dark:border-gray px-4 py-3 transition duration-300 focus-within:border-2 focus-within:duration-300 focus-within:ease-in focus-within:border-primary;
+  }
 }
-
