@@ -5,7 +5,7 @@ import { Heart } from 'iconoir-react'
 const Annonce = ({ className }) => {
     return (
         <div
-            className={`w-full relative py-2 ${className}`}>
+            className={`w-full px-2 relative py-2 ${className}`}>
             <div
                 className='w-full'>
                 <div className='w-full relative group overflow-hidden '>

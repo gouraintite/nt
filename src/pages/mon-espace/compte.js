@@ -49,7 +49,7 @@ const compte = () => {
     }
   ])
 
-  const [step, setStep] = useState(2);
+  const [step, setStep] = useState(1);
 
   const updateValue = (itemId) => {
     setNavItems((prevItems) =>

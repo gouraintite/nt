@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { EditPencil, Eye, EyeClosed } from 'iconoir-react'
-import Place from '@/static/doul.jpg'
+import Profile from '@/static/profile.jpg'
 import { useState } from 'react'
 import Btn from '../btn/btn'
 
@@ -10,9 +10,9 @@ const Compte = () => {
     const [hide, setHide] = useState(true)
     return (
         <div className='w-full h-full'>
-            <div className='relative h-full flex justify-around items-center space-x-12 p-9 py-5'>
-                <div className='w-1/2'>
-                    <p className='text-5xl font-black py-2'>
+            <div className='relative h-full flex flex-wrap justify-around items-center lg:space-x-12 lg:space-y-0 space-y-5 p-9 py-5'>
+                <div className='lg:w-[48%] w-full'>
+                    <p className='text-5xl font-black py-2 w-full'>
                         Mon espace <span className='text-blue'>Nyanga</span>
                     </p>
                     <p className='text-lg text-justify py-2'>
@@ -24,7 +24,11 @@ const Compte = () => {
                     </p>
                     <div className='flex justify-between bg-blue/10 p-2 rounded-3xl'>
                         <div className='h-20 w-20 relative'>
-
+                            <Image
+                                src={Profile}
+                                fill
+                                className='rounded-lg'
+                            />
                         </div>
                         <p className='text-blue flex items-center'>
                             Changer
@@ -91,8 +95,8 @@ const Compte = () => {
                         </button>
                     </div>
                 </div>
-                <div className='w-1/2 h-full flex justify-end'>
-                    <div className='w-9/12 bg-sky-950 rounded-3xl p-6 text-white'>
+                <div className='lg:w-[48%] w-full h-full flex lg:justify-end justify-around mx-auto'>
+                    <div className='lg:w-9/12 w-full bg-sky-950 rounded-3xl p-6 text-white'>
                         <p className='text-5xl font-black py-2 text-white'>
                             Changer le mot de passe
                         </p>
