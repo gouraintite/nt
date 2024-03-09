@@ -9,8 +9,8 @@ const Compte = () => {
 
     const [hide, setHide] = useState(true)
     return (
-        <div className='w-full h-full'>
-            <div className='relative h-full flex flex-wrap justify-around items-center lg:space-x-12 lg:space-y-0 space-y-5 p-9 py-5'>
+        <div>
+            <div className='relative h-screen flex flex-wrap justify-around items-center lg:space-x-12 lg:space-y-0 space-y-5 p-9 py-5'>
                 <div className='lg:w-[48%] w-full'>
                     <p className='text-5xl font-black py-2 w-full'>
                         Mon espace <span className='text-blue'>Nyanga</span>
@@ -90,7 +90,7 @@ const Compte = () => {
                         </div>
                     </div>
                     <div className='flex w-full justify-end mt-4'>
-                        <button className='bg-gray-400 hover:bg-gray-500 text-white text-center px-4 py-2 rounded-xl focus:outline-none'>
+                        <button className='bg-sky-950 hover:bg-gray-500 text-white text-center px-4 py-2 rounded-xl focus:outline-none'>
                             Sauvegarder
                         </button>
                     </div>

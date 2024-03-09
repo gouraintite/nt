@@ -19,6 +19,15 @@
   transition: all 1s ease-in-out;
 }
 
+
+.step{
+  @apply w-16 h-16 rounded-full border-none text-center flex justify-center items-center font-bold text-4xl text-black/30 bg-slate-200
+}
+
+.step-active {
+  @apply w-16 h-16 rounded-full border border-primary text-center flex justify-center items-center font-black text-4xl text-green-900 bg-green-100
+}
+
 @layer components {
   .navbar-active .hamburger div:first-child {
     @apply rotate-45 translate-y-1.5;

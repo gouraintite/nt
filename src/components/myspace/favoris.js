@@ -1,13 +1,58 @@
+import Btn from '../btn/btn'
+
+import { GridPlus, CloudUpload, BinHalf, Clock } from 'iconoir-react'
 import Annonce from '../tools/annonce'
 
-const MesFavoris = () => {
+const MesAnnonces = () => {
     return (
-        <div className='w-full h-screen overflow-scroll'>
-            <div className='relative h-full p-2 py-5'>
-                <p className='lg:text-5xl lg:text-start text-center text-3xl font-bold py-2'>
-                    Destinations
+        <div className='w-full h-screen overflow-scroll pb-12'>
+            <div className='relative h-full p-3 py-5'>
+                <p className='text-5xl font-bold py-2'>
+                    Mon Agenda
                 </p>
-                <div className='lg:mt-12 mt-4'>
+                <div className='flex flex-wrap justify-start space-x-3 mt-12'>
+                    <Btn 
+                        content={<p className='flex justify-between gap-3 cursor-pointer rounded-3xl'>
+                        <div>
+                            <GridPlus />
+                        </div>
+                        <p>
+                            Plannifiées
+                        </p>
+                    </p>}
+                    />
+                    <div
+                        className='flex justify-around space-x-3 p-3 px-5 border-2 border-black cursor-pointer rounded-2xl'
+                        onClick={() => {
+                            setStep(prev => prev - 1)
+                        }}>
+                        <CloudUpload />
+                        <p>
+                            Plannifier
+                        </p>
+                    </div>
+                    <div
+                        className='flex justify-around space-x-3 p-3 px-5 border-2 border-black cursor-pointer rounded-2xl'
+                        onClick={() => {
+                            setStep(prev => prev - 1)
+                        }}>
+                        <Clock />
+                        <p>
+                            Passées
+                        </p>
+                    </div>
+                    <div
+                        className='flex justify-around space-x-3 p-3 px-5 border-2 border-black cursor-pointer rounded-2xl'
+                        onClick={() => {
+                            setStep(prev => prev - 1)
+                        }}>
+                        <BinHalf />
+                        <p>
+                            Supprimées
+                        </p>
+                    </div>
+                </div>
+                <div className='mt-12'>
                     <div className="flex flex-wrap lg:flex-none">
                         <Annonce className='lg:w-1/3 md:w-1/2 w-full mx-0' />
                         <Annonce className='lg:w-1/3 md:w-1/2 w-full mx-0' />
@@ -25,4 +70,4 @@ const MesFavoris = () => {
     )
 }
 
-export default MesFavoris
+export default MesAnnonces
